@@ -1,0 +1,53 @@
+==== RELATÓRIO DE RESULTADOS (Gurobi) ====
+
+Status: ÓTIMO
+Custo Total de Combustível (litros): 17.9095
+Tempo de execução (s): 0.258
+
+-- Atendimento por Faculdade --
+  - UFJF: demanda 28, alocados 28
+  - Estacio: demanda 16, alocados 16
+  - SUPREMA: demanda 4, alocados 4
+  - Uniacademia: demanda 8, alocados 8
+  - Universo: demanda 5, alocados 5
+  - Unicsum: demanda 4, alocados 4
+
+-- Detalhes por Veículo --
+
+Veículo: van2016
+  - Lotação: 16 / 18 (88.9%)
+  - Alunos transportados: 
+      * Estacio: 16 alunos
+  - Rota: Bicas -> Estacio
+  - Custos por arco (litros):
+      * Bicas -> Estacio: 3.7600
+  - Custo total do veículo (litros): 3.7600
+
+Veículo: van2020
+  - Lotação: 13 / 18 (72.2%)
+  - Alunos transportados: 
+      * SUPREMA: 4 alunos
+      * Universo: 5 alunos
+      * Unicsum: 4 alunos
+  - Rota: Bicas -> Universo -> Unicsum -> SUPREMA
+  - Custos por arco (litros):
+      * Bicas -> Universo: 3.1606
+      * Universo -> Unicsum: 0.4778
+      * Unicsum -> SUPREMA: 0.6111
+  - Custo total do veículo (litros): 4.2495
+
+Veículo: onibus2017
+  - Lotação: 36 / 44 (81.8%)
+  - Alunos transportados: 
+      * UFJF: 28 alunos
+      * Uniacademia: 8 alunos
+  - Rota: Bicas -> Uniacademia -> UFJF
+  - Custos por arco (litros):
+      * Bicas -> Uniacademia: 9.3154
+      * Uniacademia -> UFJF: 0.5846
+  - Custo total do veículo (litros): 9.9000
+
+Validação: 
+  Soma dos custos por veículo: 17.9095 litros
+  Objetivo do modelo:         17.9095 litros
+  Diferença numérica pequena é esperada por arredondamentos.

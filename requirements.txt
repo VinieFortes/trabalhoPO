@@ -1,0 +1,4 @@
+# Dependências do projeto
+# Gurobi Python API (precisa de licença válida em tempo de execução)
+gurobipy>=11,<12
+openpyxl>=3.1
